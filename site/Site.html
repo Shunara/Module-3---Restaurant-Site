@@ -51,6 +51,26 @@
 		.navbar-brand p span{
 				vertical-align: middle;
 		}
+		#nav-list{
+				margin-top: 10px;
+		}
+		#nav-list a{
+				color: blue;
+				text-align: center;
+		}
+		#nav-list a:hover{
+				background: white;
+		}
+		#nav-list a span{
+				font-size: 1.8em;
+		}
+		#phone{
+				margin-top: 5px;
+		}
+		#phone a{
+			text-align: right;
+			padding-bottom: 0;
+		}
 	</style>
 </head>
 <body>
@@ -60,21 +80,37 @@
 				<div class="navbar-header">
 					<a href="Site.html" class="pull-left visible-md visible-lg" >
 						<div><img src="2020-09-09.jpg" alt="My_image" id="logo-img" style="width 150px; height: 150px;"></div>
-					</a>
-				</div>	
+					</a>	
 
-				<div class="navbar-brand">
-					<a href="Site.html"><h1>Konoha's Ichiraku Ramen</h1></a>
-					<p><img src="Konoha_Symbol.png" alt="Konoha's Symbol" style="width: 50px;height: 50px;"><span>The best ramen in all Land of Fire</span></p>
+					<div class="navbar-brand">
+						<a href="Site.html"><h1>Konoha's Ichiraku Ramen</h1></a>
+						<p><img src="Konoha_Symbol.png" alt="Konoha's Symbol" style="width: 50px;height: 50px;"><span>The best ramen in all Land of Fire</span></p>
+					</div>
+
+					<button type="button" class="navbar-toggle collapsed" data-toggle="colapse" data-target="collapsable-nav" aria-expanded="false">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
 				</div>
 
-				<button type="button" class="navbar-toggle collapsed" data-toggle="colapse" data-target="collapsable-nav" aria-expanded="false">
-					<span class="sr-only">Toggle navigation</span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-				</button>
-
+				<div id="collapsable-nav" class="collapse navbar-collapse">
+					<ul id="nav-list" class="nav navbar-nav navbar-right">
+						<li>
+							<a href="menu-categories.html">
+								<span class="glyphicon glyphicon-cutlery"></span><br class="hidden-xs">Menu</a>
+						</li>
+						<li>
+							<a href="#"><span class="glyphicon glyphicon-info-sign"></span><br class="hidden-xs">About</a>
+						</li>
+						<li>
+							<a href="#"><span class="glyphicon glyphicon-certificate"></span><br class="hidden-xs">Awards</a>
+						</li>
+						<li id="phone" class="hidden-xs"><a href="tel:410-602-5008"><span>410-602-5008</span></a><div>* We Deliver</div>
+						</li>
+					</ul>
+				</div>
 			</div>
 		</nav>
 
