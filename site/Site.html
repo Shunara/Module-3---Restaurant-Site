@@ -2,28 +2,55 @@
 <hmtl>
 <head>
 	<meta charset="utf-8">
-	<title>Shunara's Bistro</title>
+	<title>Konoha's Ichiraku Ramen</title>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+	<link href='https://fonts.googleapis.com/css?family=Allura' rel='stylesheet'>
 	<style type="text/css">
 		body{
 			font-size: 16px;
 			color: #FFFFFF;
 			background-color: #033067;
 			font-family: arial, sans-serif;
-			}
+		}
 		#header-nav{
 				background-color: #BB0C0C;
 				border-radius: 0;
 				border: 0;
-			}
+		}
 		#logo-img{
 				background-color: yellow;
 				width: 150 px;
 				height: 150 px;
 				margin: 10px 15px 10px 0;
-			}
+		}
+		.navbar-brand{
+				padding-top: 25px;
+		}
+		.navbar-brand h1{
+				font-family: 'Allura';
+				color: yellow;
+				font-size: 1.5em;
+				text-transform: uppercase;
+				font-weight: bold;
+				text-shadow: 4px 4px 4px #000;
+				margin-top: 0;
+				margin-bottom: 0;
+				line-height: .75;
+		}
+		.navbar-brand a: hover, .navbar-brand a: focus{
+				text-decoration: none;
+		}
+		.navbar-brand p{
+				color: #000;
+				text-transform: uppercase;
+				font-size: .7em;
+				margin-top: 15px;
+		}
+		.navbar-brand p span{
+				vertical-align: middle;
+		}
 	</style>
 </head>
 <body>
@@ -31,9 +58,14 @@
 		<nav id="header-nav" class="navbar navbar-default">
 			<div class = "container">
 				<div class="navbar-header">
-					<a href="Site.html" class="">
-						<div><img src="2020-09-09.jpg" alt="My_image" id="logo-img"></div>
+					<a href="Site.html" class="pull-left visible-md visible-lg" >
+						<div><img src="2020-09-09.jpg" alt="My_image" id="logo-img" style="width 150px; height: 150px;"></div>
 					</a>
+				</div>	
+
+				<div class="navbar-brand">
+					<a href="Site.html"><h1>Konoha's Ichiraku Ramen</h1></a>
+					<p><img src="Konoha_Symbol.png" alt="Konoha's Symbol" style="width: 50px;height: 50px;"><span>The best ramen in all Land of Fire</span></p>
 				</div>
 			</div>
 		</nav>
