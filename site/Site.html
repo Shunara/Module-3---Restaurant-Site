@@ -81,6 +81,50 @@
 		}
 		/* END HEADER */
 
+		#Location{
+			background: url("Map.jpg") no-repeat;
+			background-position: center;
+			background-color: #d2a547;
+		}
+		#Customers{
+			background: url("Naruto.jpg") no-repeat;
+			background-position: center;
+			background-color: #d2a547;
+		}
+		#Owner{
+			background: url("Teuchi.jpg") no-repeat;
+			background-position: center;
+			background-color: #d2a547;
+		}
+		#Ichiraku_Ramen{
+			background: url("ichiraku-ramen.jpg") no-repeat;
+			background-position: center;
+			background-color: #d2a547;
+		}
+
+		#Customers,#Ichiraku_Ramen,#Location,#Owner{
+			height: 250px;
+			width: 100%;
+			margin-bottom: 15px;
+			position: relative;
+			border: 2px solid black;
+			overflow: hidden;
+		}
+		#Customers span,#Ichiraku_Ramen span,#Location span,#Owner span{
+			position: absolute;
+			bottom: 0;
+			right: 0;
+			width: 100%;
+			text-align: center;
+			font-size: 1.6em;
+			text-transform: uppercase;
+			background-color: #d2a547;
+			color: #b32d1e;
+			opacity: .8;
+		}
+		#Customers:hover,#Ichiraku_Ramen:hover,#Location:hover,#Owner:hover{
+			box-shadow: 0 5px 5px 5px #b32d1e;
+		}
 		/*************** Large devices only ***************/
 		@media (min-width: 1200px){
 			.container .jumbotron{
@@ -113,7 +157,10 @@
 				box-shadow: 0 0 50px black;
 				border: 2px solid black;
 			}
-
+			#Customers,#Ichiraku_Ramen,#Location,#Owner{
+				width: 300px;
+				margin: 0 auto 15px;
+			}
 		}
 		/*************** Extra small devices only ***************/
 		@media (max-width: 767px){
@@ -145,7 +192,10 @@
 				box-shadow: 0 0 50px black;
 				border: 2px solid black;
 			}
-
+			#Customers,#Ichiraku_Ramen,#Location,#Owner{
+				width: 300px;
+				margin: 0 auto 15px;
+			}
 		}
 	</style>
 </head>
@@ -196,6 +246,21 @@
 	<div id="main_content" class="container">
 		<div class="jumbotron">
 			<img src="ichiraku-ramen-inside.jpg" alt="Ichiraku" class="img-responsive visible-xs">
+		</div>
+
+		<div class="row" id="home-tiles">
+			<div class="col-md-3 col-sm-6 col-xs-12">
+				<a href="#"><div id="Customers"><span>Customers</span></div></a>
+			</div>
+			<div class="col-md-3 col-sm-6 col-xs-12">
+				<a href="#"><div id="Ichiraku_Ramen"><span>Ichiraku Ramen</span></div></a>
+			</div>
+			<div class="col-md-3 col-sm-6 col-xs-12">
+				<a href="#" target="_blank"><div id="Location"><span>Location</span></div></a>
+			</div>
+			<div class="col-md-3 col-sm-6 col-xs-12">
+				<a href="#"><div id="Owner"><span>About the owner</span></div></a>
+			</div>
 		</div>
 	</div>
 	<!-- jQuerry (Bootstrap JS plugins depend on it)
