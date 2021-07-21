@@ -83,7 +83,12 @@
 
 		/*************** Large devices only ***************/
 		@media (min-width: 1200px){
-
+			.container .jumbotron{
+				background: url("ichiraku-ramen-inside.jpg") no-repeat;
+				height: 675px;
+				box-shadow: 0 0 50px black;
+				border: 2px solid black;
+			}
 		}
 		/*************** Medium devices only ***************/
 		@media (min-width: 992px) and (max-width: 1199px){
@@ -93,9 +98,21 @@
 				height: 100px;
 				margin: 5px 5px 5px 0;
 			}
+			.container .jumbotron{
+				background: url("ichiraku-ramen-inside-2.jpg") no-repeat;
+				height: 558px;
+				box-shadow: 0 0 50px black;
+				border: 2px solid black;
+			}
 		}
 		/*************** Small devices only ***************/
 		@media (min-width: 768px) and (max-width: 991px){
+				.container .jumbotron{
+				background: url("ichiraku-ramen-inside-3.jpg") no-repeat;
+				height: 432px;
+				box-shadow: 0 0 50px black;
+				border: 2px solid black;
+			}
 
 		}
 		/*************** Extra small devices only ***************/
@@ -123,6 +140,12 @@
 				font-size: 1em;
 				margin-right: 5px;
 			}
+			.container .jumbotron{
+				padding: 0;
+				box-shadow: 0 0 50px black;
+				border: 2px solid black;
+			}
+
 		}
 	</style>
 </head>
@@ -169,6 +192,12 @@
 		</nav>
 
 	</header>
+
+	<div id="main_content" class="container">
+		<div class="jumbotron">
+			<img src="ichiraku-ramen-inside.jpg" alt="Ichiraku" class="img-responsive visible-xs">
+		</div>
+	</div>
 	<!-- jQuerry (Bootstrap JS plugins depend on it)
 	<script src="js/jquery-2.1.4.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
