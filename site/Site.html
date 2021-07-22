@@ -81,6 +81,34 @@
 		}
 		/* END HEADER */
 
+		/* Footer */
+		.panel-footer{
+			margin-top: 30px;
+			padding-top: 35px;
+			padding-bottom: 30px;
+			background-color: #b32d1e;
+			border-top: 0;
+		}
+
+		#clients,#references{
+			line-height: 2;
+		}
+
+		#clients > span, #references > span{
+			font-size: 1.3em;
+		}
+
+		#references p{
+			font-size: 1.5em;
+			font-weight: bold;
+			color: #d2a547
+		}
+
+		#references #kage{
+			font-style: italic;
+		}
+		/* End footer */
+
 		#Location{
 			background: url("Map.jpg") no-repeat;
 			background-position: center;
@@ -196,6 +224,13 @@
 				width: 300px;
 				margin: 0 auto 15px;
 			}
+			.panel-footer section{
+				margin-bottom: 30px;
+				text-align: center;
+			}
+			.panel-footer section hr{
+				width: 50%;
+			}
 		}
 	</style>
 </head>
@@ -263,6 +298,29 @@
 			</div>
 		</div>
 	</div>
+
+	<footer class="panel-footer">
+		<div class="container">
+			<div class="row">
+				<section id="clients" class="col-sm-6">
+					<span>Important customers:</span><br>
+					Naruto Uzumaki<br>
+					Sakura Haruno<br>
+					Kakashi Hatake<br>
+					Ino Yamanaka<br>
+					Shikamaru Nara<br>
+					Choji Akimichi
+					<hr class="visible-xs">
+				</section>
+				<section id="references" class="col-sm-6">
+					<p>"I've never eaten anything that tasted so good."</p>
+					<span id="kage">Lord Fifth Kazekage, Gaara.</span><br><br>
+					<p>"I love ramen!!!"</p>
+					<span id="kage">Lord Seventh Hokage, Naruto Uzumaki.</span>
+				</section>
+			</div>
+		</div>
+	</footer>
 	<!-- jQuerry (Bootstrap JS plugins depend on it)
 	<script src="js/jquery-2.1.4.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
